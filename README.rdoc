@@ -39,7 +39,7 @@ Draw charts using SVG.
 
 == Collaborators
 
-* André Ronix (http://www.linkedin.com/pub/andr%C3%A9-s-ronix/27/212/3b2)
+* André Ronix (http://www.linkedin.com/pub/andr%C3%A9-s-ronix/27/212/3b2): Generated the coordinates calc.
 
 == License
 
