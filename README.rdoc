@@ -12,20 +12,25 @@ Draw charts using SVG.
   require "rubygems"
   require "svg_charts"
 
-  line_chart = SVGCharts::Line.new({
-    :height => 320,
-    :width => 680,
+  @line = SVGCharts::Line.new({
+    :height => 300,
+    :width => 300,
     :y_retreat => 20,
-    :y_label => "Numbers",
-    :x_retreat => 20,
-    :x_label => "Letters",
-    :x_scale => ["A", "B", "C"],
-    :data => [10, 20, 30],
-    :data_color => "#000000"
+    :x_retreat => 20
   })
 
-  @scale = line_chart.draw_scale
-  @chart = line_chart.draw_chart
+  @scale = @line.scale({
+    :y_label => "Numbers",
+    :x_label => "Letters"
+  })
+
+  @chart << @line.draw({
+    :scale => ["A", "B", "C"],
+    :data => [10, 20, 30],
+    :data_color => "#000000",
+    :show_scale => true,
+    :show_dashed => true
+  })
 
   # file.html
   <svg width="680" height="350">
