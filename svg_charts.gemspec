@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_rubygems_version = Gem::Requirement.new(">= 1.8.23")
   s.summary = s.description
-  s.version = "1.0"
+  s.version = "1.01"
 end
