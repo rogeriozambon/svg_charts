@@ -2,7 +2,7 @@ module SVGCharts
   class Line
     include SVGElements
 
-    def initialize(options = {})
+    def initialize(options)
       validation options, [:width, :height, :y_retreat, :x_retreat]
 
       @width = options[:width]
@@ -12,7 +12,7 @@ module SVGCharts
       @x_retreat = options[:x_retreat]
     end
 
-    def scale(options = {})
+    def scale(options)
       validation options, [:y_label, :x_label]
 
       scale = line({
@@ -55,7 +55,7 @@ module SVGCharts
       scale
     end
 
-    def draw(options = {})
+    def draw(options)
       validation options, [:scale, :data, :data_color, :show_scale, :show_dashed]
 
       calculate_coordinates options[:data]

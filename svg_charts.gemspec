@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.authors = ["Rogério Zambon"]
-  s.date = "2013-01-25"
+  s.date = "2013-01-28"
   s.description = "Draw charts using SVG."
   s.email = "rogeriozambon@gmail.com"
   s.files = [
@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_rubygems_version = Gem::Requirement.new(">= 1.8.23")
   s.summary = s.description
-  s.version = "1.01"
+  s.version = "1.02"
 end
