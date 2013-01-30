@@ -34,7 +34,8 @@ line = SVGCharts::Line.new({
   :show_dashed => true
 })
 
-#=> file.html
+~~~.html
+<!-- file.html -->
 
 <svg width="680" height="350">
   <%= @scale %>
