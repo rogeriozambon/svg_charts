@@ -1,52 +1,56 @@
-= SVGCharts
+# SVGCharts
 
 Draw charts using SVG.
 
-== Installation
+## Installation
 
   gem install svg_charts
 
-== Usage
+## Usage
 
-  # file.rb
-  require "rubygems"
-  require "svg_charts"
+~~~.ruby
+#=> file.rb
 
-  line = SVGCharts::Line.new({
-    :height => 300,
-    :width => 300,
-    :y_retreat => 20,
-    :x_retreat => 20
-  })
+require "rubygems"
+require "svg_charts"
 
-  @scale = line.scale({
-    :y_label => "Numbers",
-    :x_label => "Letters"
-  })
+line = SVGCharts::Line.new({
+  :height => 300,
+  :width => 300,
+  :y_retreat => 20,
+  :x_retreat => 20
+})
 
-  @chart = line.draw({
-    :scale => ["A", "B", "C"],
-    :data => [10, 20, 30],
-    :data_color => "#000000",
-    :show_scale => true,
-    :show_dashed => true
-  })
+@scale = line.scale({
+  :y_label => "Numbers",
+  :x_label => "Letters"
+})
 
-  # file.html
-  <svg width="680" height="350">
-    <%= @scale %>
-    <%= @chart %>
-  </svg>
+@chart = line.draw({
+  :scale => ["A", "B", "C"],
+  :data => [10, 20, 30],
+  :data_color => "#000000",
+  :show_scale => true,
+  :show_dashed => true
+})
 
-== Maintainer
+#=> file.html
+
+<svg width="680" height="350">
+  <%= @scale %>
+  <%= @chart %>
+</svg>
+~~~
+
+## Maintainer
 
 * Rogério Zambon (http://rogeriozambon.com)
 
-== Collaborators
+## Collaborators
 
 * André Ronix (http://www.linkedin.com/pub/andr%C3%A9-s-ronix/27/212/3b2): Generated the coordinates calc.
 
-== License
+## License
 
 (The MIT License)
 
