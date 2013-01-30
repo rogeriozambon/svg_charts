@@ -35,8 +35,8 @@ line = SVGCharts::Line.new({
 })
 ~~~
 
-	# file.html
-	
+	# file.erb
+
 	<svg width="680" height="350">
 		<%= @scale %>
 		<%= @chart %>
