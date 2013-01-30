@@ -35,11 +35,12 @@ line = SVGCharts::Line.new({
 })
 ~~~
 
-  <svg width="680" height="350">
-    <%= @scale %>
-    <%= @chart %>
-  </svg>
-
+	# file.html
+	
+	<svg width="680" height="350">
+		<%= @scale %>
+		<%= @chart %>
+	</svg>
 
 ## Maintainer
 
