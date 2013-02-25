@@ -44,7 +44,7 @@ line = SVGCharts::Line.new({
 
 ## Maintainer
 
-* Rogério Zambon (http://rogeriozambon.com)
+* Rogério Zambon (http://rogerio.me)
 
 ## Collaborators
 
