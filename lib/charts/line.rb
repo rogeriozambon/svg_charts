@@ -69,7 +69,7 @@ module SVGCharts
           :y1 => coordinate[2],
           :y2 => coordinate[3],
           :line_width => 1,
-          :color => "#999"
+          :color => options[:data_color]
         })
 
         if options[:show_dashed]

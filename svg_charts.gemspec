@@ -1,17 +1,19 @@
 # -*- encoding: utf-8 -*-
-Gem::Specification.new do |s|
-  s.name = "svg_charts"
-  s.authors = ["Rogério Zambon"]
-  s.email = ["rogeriozambon@gmail.com"]
-  s.date = "2013-01-28"
-  s.description = "Draw charts using SVG."
-  s.homepage = "http://github.com/rogeriozambon/svg_charts"
+$:.push File.expand_path("../lib", __FILE__)
+require "charts/version"
 
-  s.files = `git ls-files`.split("\n")
+Gem::Specification.new do |s|
+  s.name        = "svg_charts"
+  s.version     = SVGCharts::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Rogério Zambon"]
+  s.email       = ["rogeriozambon@gmail.com"]
+  s.homepage    = "http://github.com/rogeriozambon/svg_charts"
+  s.summary     = "Draw charts using SVG."
+  s.description = s.summary
+
+  s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 1.8.23")
-  s.summary = s.description
-
-  s.version = "1.02"
+  s.add_development_dependency "rspec"
 end

@@ -1,1 +1,6 @@
-Dir[File.expand_path("../../lib/charts", __FILE__) + "/*.rb"].each { |file| require file }
+require "bundler/setup"
+Bundler.require :default, :development
+
+require "svg_charts"
+require "charts/elements"
+require "charts/line"
