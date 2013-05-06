@@ -121,7 +121,7 @@ module SVGCharts
       @coordinates = []
 
       y_positions = (@height - @y_retreat)/data.max
-      x_positions = @width/data.size
+      x_positions = (@width - (@x_retreat * 2))/(data.size - 1)
 
       data.each_with_index do |value, i|
         x1 = @x_retreat + (x_positions * i)
