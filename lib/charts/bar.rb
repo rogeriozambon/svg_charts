@@ -109,7 +109,7 @@ module SVGCharts
         unless data[i + 1].nil?
           x2 = @x_retreat + (x_positions * (i + 1))
         else
-          x2 = @width - (@x_retreat + 12)
+          x2 = @width - (@x_retreat + 8)
         end
 
         @coordinates << [x1.abs, x2.abs, y1.abs]
