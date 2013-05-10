@@ -1,3 +1,3 @@
 module SVGCharts
-  VERSION = "2.2"
+  VERSION = "2.3"
 end
