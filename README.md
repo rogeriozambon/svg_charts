@@ -1,5 +1,9 @@
 # SVGCharts
 
+[![Gem Version](https://badge.fury.io/rb/svg_charts.png)](http://badge.fury.io/rb/svg_charts)
+[![Build Status](https://travis-ci.org/rogeriozambon/anp_prices.png?branch=master)](https://travis-ci.org/rogeriozambon/anp_prices)
+[![Code Climate](https://codeclimate.com/github/rogeriozambon/svg_charts.png)](https://codeclimate.com/github/rogeriozambon/svg_charts)
+
 Draw charts using SVG.
 
 ## Installation
