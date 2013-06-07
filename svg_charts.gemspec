@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "charts/version"
+require "svg_charts/version"
 
 Gem::Specification.new do |s|
   s.name        = "svg_charts"
